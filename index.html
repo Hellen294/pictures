@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Picture Web</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    .picture-frame {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .picture-frame img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Positioning 5 pictures nicely in the grid */
+    .p1 { grid-column: 2; grid-row: 1; }
+    .p2 { grid-column: 1; grid-row: 2; }
+    .p3 { grid-column: 2; grid-row: 2; }
+    .p4 { grid-column: 3; grid-row: 2; }
+    .p5 { grid-column: 2; grid-row: 3; }
+  </style>
+</head>
+<body>
+  <div class="picture-frame">
+    <img src="car1.png" alt="Pic 1" class="p1">
+    <img src="car1.png" alt="Pic 2" class="p2">
+    <img src="car1.png" alt="Pic 3" class="p3">
+    <img src="car1.png" alt="Pic 4" class="p4">
+    <img src="car1.png" alt="Pic 5" class="p5">
+  </div>
+</body>
+</html>
